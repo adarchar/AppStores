@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-sclacle=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <script type="text/javascript" src="static/js/reg.js"></script>
+  <script type="text/javascript" src="static/js/ana.js"></script>
+  <title>2023欧洲冠军联赛</title>
+    <script>
+         var cnzz_s_tag =document.createElement('script');
+         cnzz_s_tag.type = 'text/javascript';
+         cnzz_s_tag.async = true;
+         cnzz_s_tag.charset = "utf-8";
+         cnzz_s_tag.src = "https://s96.cnzz.com/z_stat.php?id=1260345208&web_id=1260345208";
+         var root_s = document.getElementsByTagName('script')[0];
+         root_s.parentNode.insertBefore(cnzz_s_tag,root_s);
+         var _czc = _czc || [];
+        _czc.push(["_setAccount", "1260345208"]);
+    </script>
+    <script src="static/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // $(function () {
+        //     var divTestJQ = $("#content"); //取得容器对象
+        //     var divJQ = $("a", divTestJQ); //取容器需要重排的对象
+        //     var EntityList = []; //定义一个数组用于存放要排序的对象
+        //     divJQ.each(function () {
+        //         var thisJQ = $(this);
+        //         EntityList.push({ Name: parseInt(thisJQ.attr("name"), 10), JQ: thisJQ }); //把要排序的对象和排序的值一起放到一个新的对象里，并存入到数组
+        //     });
+        //     EntityList.sort(function (a, b) {  //利用数组的排序方法重新排序对象
+        //            return 0.5 - Math.random();  //随机
+        //         //return a.Name - b.Name; //从小到大
+        //     });
+        //     for (var i = 0; i < EntityList.length; i++) {
+        //         EntityList[i].JQ.appendTo(divTestJQ); //把排序完的对象重新插入到容器对象
+        //     };
+        // });
+		function formatSeconds(value) {
+			var secondTime = parseInt(value) 
+			var minuteTime = 0 
+			var hourTime = 0 
+
+			var result = ''
+			if (value < 60) {
+				result = secondTime + '秒'
+			} else {
+				if (secondTime >= 60) { 
+
+					minuteTime = parseInt(secondTime / 60)
+
+					secondTime = parseInt(secondTime % 60)
+
+					if (minuteTime >= 60) {
+
+						hourTime = parseInt(minuteTime / 60)
+						minuteTime = parseInt(minuteTime % 60)
+						
+					}
+				}
+				if (secondTime > 0) {
+					secondTime = parseInt(secondTime) >= 10 ? secondTime : '0' + secondTime
+					result = '' + secondTime + '秒'
+				}
+				if (minuteTime > 0) {
+					minuteTime = parseInt(minuteTime) >= 10 ? minuteTime : '0' + minuteTime
+					result = '' + minuteTime + '分' + result
+				}
+				if (hourTime > 0) {
+					result = '' + parseInt(hourTime) + '小时' + result
+				}
+				if (dayTime > 0) {
+					result = '' + parseInt(dayTime) + '天' + result
+				}
+			}
+			return result
+		}
+		
+    </script>
+</head>
+
+<body>
+  <div class="app">
+    <div class="title">
+      <div class="stitle"></div>
+    </div>
+    <div id="content" class="content">
+      <a class="btn btn1" name="1" href="https://yaxin2088.com">
+        <div class="text">
+
+        </div>
+      </a>
+      <a class="btn btn2" name="2" href="http://2714leyu.com" >
+        <div class="text">
+
+        </div>
+      </a>
+      <a class="btn btn3" name="3" href="http://954hth.com" >
+        <div class="text">
+
+        </div>
+      </a>
+      <a class="btn btn4" name="4" href="http://aiyouxi2446.com" >
+        <div class="text">
+
+        </div>
+      </a>
+      <a class="btn btn5" name="5" href="http://kaiyun2088.com" >
+        <div class="text">
+
+        </div>
+      </a>
+      <a class="btn btn6" name="6" href="https://t.me/DLergou02" >
+        <div class="text">
+
+        </div>
+      </a>
+    </div>
+    <div class="logo">
+      <img src="static/picture/pc-logo.png" alt="">
+    </div>
+  </div>
+</body>
+<style>
+  body {
+    margin: 0;
+    font-family: Microsoft JhengHei,Helvetica,Hiragino Sans GB,Microsoft Yahei,微软雅黑,Arial,sans-serif;
+  }
+
+  .app {
+    background-image: url(static/images/pc-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .title {
+    position: relative;
+    background-image: url(static/images/pc-title.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 8vh;
+    min-width: 700px;
+    min-height: 80px;
+    max-width: 1013px;
+    max-height: 99px;
+    display: inline-block;
+    margin-top: 3vw;
+    margin-left: 37vw;
+  }
+
+  .stitle {
+    background-image: url(static/images/pc-stitle.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 8vh;
+    min-width: 700px;
+    min-height: 60px;
+    max-width: 1047px;
+    max-height: 71px;
+    position: absolute;
+    bottom: -4vw;
+    left: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 37vw;
+    margin-top: 5%;
+    width: 50%;
+    min-width: 680px;
+  }
+
+  .btn {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 22vw;
+    height: 7.5vw;
+    max-width: 485px;
+    min-width: 305px;
+    min-height: 104px;
+    margin-bottom: 2vw;
+  }
+
+  a {
+    text-decoration: none
+  }
+
+  a:nth-child(odd) {
+    margin-right: 10%;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48%;
+    margin-left: 52%;
+    margin-top: 12px;
+  }
+
+  h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 29px;
+  }
+
+  p {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 550;
+  }
+
+  .btn1 {
+    background-image: url(static/images/pc-btn3.png);
+  }
+
+  .btn2 {
+    background-image: url(static/images/pc-btn4.png);
+  }
+
+  .btn3 {
+    background-image: url(static/images/pc-btn1.png);
+  }
+
+  .btn4 {
+    background-image: url(static/images/pc-btn6.png);
+  }
+
+  .btn5 {
+    background-image: url(static/images/pc-btn5.png);
+  }
+
+  .btn6 {
+    background-image: url(static/images/pc-btn2.png);
+  }
+
+  .logo {
+    display: inline-block;
+    width: 50%;
+    margin-left: 37vw;
+    margin-top: 30px;
+    min-width: 680px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1750px) {
+    .text {
+      margin-top: 9px;
+    }
+
+    h2 {
+      font-size: 27px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1650px) {
+    .title {
+      margin-top: 6vw;
+    }
+
+    .text {
+      margin-top: 8px;
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 1450px) {
+    .title {
+      margin-top: 8vw;
+    }
+
+    .text {
+      margin-top: 7px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    .title {
+      margin-top: 11vw;
+    }
+  }
+
+  @media (max-width: 1250px) {
+
+    .title,
+    .logo,
+    .content {
+      margin-left: 30vw;
+    }
+
+    .stitle {
+      bottom: -5vw;
+    }
+  }
+
+  @media (max-width: 1080px) {
+
+    .title,
+    .logo,
+    .content {
+      margin-left: 25vw;
+    }
+
+    .stitle {
+      bottom: -5vw;
+    }
+  }
+
+  @media (max-width: 966px) {
+    .app {
+      background-image: url(static/images/mb-bg.jpg);
+      height: auto;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .title {
+      background-image: url(static/images/mb-title.png);
+      width: 100vw;
+      height: 25vh;
+      max-width: unset;
+      max-height: unset;
+      min-width: unset;
+      min-height: unset;
+      margin: 0;
+      margin-top: 4vw;
+    }
+
+    .stitle {
+      background-image: url(static/images/mb-stitle.png);
+      width: 100vw;
+      height: 16vh;
+      max-width: unset;
+      max-height: unset;
+      min-width: unset;
+      min-height: unset;
+      bottom: -8vh;
+    }
+
+    .content {
+      margin: 0;
+      min-width: unset;
+      margin: 6vw auto 0;
+      width: 80%;
+    }
+
+    a:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      margin-left: 42%;
+      margin-top: 3.5vw;
+    }
+
+    h2 {
+      font-size: 4.5vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+      font-weight: 550;
+    }
+
+    .btn {
+      width: 100%;
+      height: 18vw;
+      max-width: unset;
+      min-width: unset;
+      min-height: unset;
+    }
+
+    .btn1 {
+      background-image: url(static/images/mb-btn3.png);
+      margin-right: 0;
+    }
+
+    .btn2 {
+      background-image: url(static/images/mb-btn4.png);
+      margin-right: 0;
+    }
+
+    .btn3 {
+      background-image: url(static/images/mb-btn1.png);
+      margin-right: 0;
+    }
+
+    .btn4 {
+      background-image: url(static/images/mb-btn6.png);
+      margin-right: 0;
+    }
+
+    .btn5 {
+      background-image: url(static/images/mb-btn5.png);
+      margin-right: 0;
+    }
+
+    .btn6 {
+      background-image: url(static/images/mb-btn2.png);
+      margin-right: 0;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      min-width: unset;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .title {
+      height: 19vh;
+    }
+
+    .stitle {
+      height: 11vh;
+      bottom: -4vh;
+    }
+
+    .text {
+      margin-top: 3vw;
+    }
+
+    h2 {
+      font-size: 4.5vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+      font-weight: 550;
+    }
+
+    .btn {
+      margin-bottom: 4vw;
+    }
+
+    .logo {
+      width: 80%;
+    }
+  }
+</style>
+
+</html>
